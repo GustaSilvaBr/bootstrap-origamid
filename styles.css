@@ -18,3 +18,7 @@ section#quote-section{
         position:relative;
     }
 }
+
+.my-collapse{
+    border-bottom:1px solid rgba(0,0,0,0.2);
+}
