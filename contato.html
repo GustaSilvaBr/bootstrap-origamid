@@ -71,10 +71,10 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="planos.html" class="nav-link active">Planos</a>
+                        <a href="planos.html" class="nav-link">Planos</a>
                     </li>
                     <li class="nav-item">
-                        <a href="contato.html" class="nav-link">Contato</a>
+                        <a href="contato.html" class="nav-link active">Contato</a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modallogin">Login</a>
@@ -89,75 +89,63 @@
         </div>
     </nav>
 
-
-    <div class="section text-center my-5">
-        <h6 class="text-uppercase">
-            Sua viage, seu plano
+    <div class="container my-5 text-center">
+        <h6 class="text-uppercase text-dark">
+            Possui algum interesse?
         </h6>
-        <h2 class="display-4 text-primary">
-            <strong>Escolha o Plano</strong>
-        </h2>
+        <h2 class="text-primary display-4"><strong>Fale conosco</strong></h2>
     </div>
 
+
     <div class="container">
-        <div class="row justify-content-evenly gy-4">
-            <div class="col-md">
-                <div class="bg-light shadow-sm rounded p-4">
-                    <h3 >Gold</h3>
-                    <ul class="list-group list-group-flush  bg-light mb-4">
-                        <li class="list-group-item bg-light">-> 30 dias de viagem</li>
-                        <li class="list-group-item bg-light">-> 3 destinos diferentes</li>
-                        <li class="list-group-item bg-light">-> 30 Tudo pago pela empresa</li>
-                        <li class="list-group-item bg-light">-> 30 Ingressos para festas</li>
-                    </ul>
-                    <select class="form-select bg-light mb-4" aria-label="Default select example">
-                        <option selected>Selecione a Cidade</option>
-                        <option value="1">Recife</option>
-                        <option value="2">Rio</option>
-                        <option value="3">São Paulo</option>
-                    </select>
-                    <div class="row align-items-center">
-                        <div class="col">
-                            <button class="btn btn-primary btn-md block">Comprar Plano</button>
-                        </div>
-                        <div class="col">
-                            <h4 class="m-0">R$ 5.000</h4>
-                        </div>
+        <div class="row gy-4">
+            <div class="col-lg">
+                <form class="bg-light rounded p-4 shadow-sm">
+                    <div class="mb-3">
+                        <label for="inputName" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="inputName">
                     </div>
-                </div>
-
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1"
+                            aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="textAreaMessage" class="form-label">Email</label>
+                        <textarea class="form-control" id="textAreaMessage" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-sm">Envia Menssagem</button>
+                </form>
             </div>
-
-            <div class="col-md">
-
-                <div class="bg-light shadow-sm rounded p-4">
-                    <h3 >Platinum <span class="badge bg-success">Novo!</span> </h3>
-                    <ul class="list-group list-group-flush  bg-light mb-4">
-                        <li class="list-group-item bg-light">-> 30 dias de viagem</li>
-                        <li class="list-group-item bg-light">-> 3 destinos diferentes</li>
-                        <li class="list-group-item bg-light">-> 30 Tudo pago pela empresa</li>
-                        <li class="list-group-item bg-light">-> 30 Ingressos para festas</li>
+            <div class="col-lg">
+                <h4 class="h6 text-uppercase">Nosso endereço</h4>
+                    <img class="img-fluid mb-4 rounded shadow-sm" src="./img/mapa.png" />
+                    <h4 class="h6 text-uppercase mb-0">Dados de contato</h4>
+                    <ul class="list-unstyled text-secondary">
+                        <li>
+                            caravan@caravan.com.br
+                        </li>
+                        <li>
+                            21 99999-9999
+                        </li>
+                        <li>
+                            De
+                            Seg. à
+                            Sex. das 8h às 18h
+                        </li>
                     </ul>
-                    <select class="form-select bg-light mb-4" aria-label="Default select example">
-                        <option selected>Selecione a Cidade</option>
-                        <option value="1">Recife</option>
-                        <option value="2">Rio</option>
-                        <option value="3">São Paulo</option>
-                    </select>
-                    <div class="row align-items-center ">
-                        <div class="col">
-                            <button class="btn btn-primary btn-md block">Comprar Plano</button>
-                        </div>
-                        <div class="col ">
-                            <h4 class="m-0">R$ 5.000</h4>
+                    <h4 class="h6 text-uppercase ">Redes sociais</h4>
+                    <div class="row">
+                        <div class="col-6 ">
+                            <a href="#" class="btn btn-outline-secondary mb-1 btn-sm w-100">Facebook</a>
+                            <a href="#" class="btn btn-outline-secondary mb-1 btn-sm w-100">Twitter</a>
+                            <a href="#" class="btn btn-outline-secondary mb-1 btn-sm w-100">YouTube</a>
                         </div>
                     </div>
-                </div>
-
-
             </div>
         </div>
     </div>
+
 
     <footer class="bg-dark text-white py-4 mt-5">
         <div class="container">
