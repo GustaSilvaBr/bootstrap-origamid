@@ -101,7 +101,7 @@
     <div class="container">
 
         <div class="row gy-5 justify-content-between">
-            <div class="col-lg me-4">
+            <div class="col-lg-6 ">
                 <form class="row g-3">
                     <div class="col-6">
                         <label for="inputName" class="form-label">Nome</label>
@@ -147,54 +147,72 @@
                             <div class="col-12">
                                 <label class="h6 form-label text-primary text-uppercase" for="inputCep"> forma de
                                     pagamento </label>
-                                <div class="input-group">
-                                    <input type="radio" class="btn-check " name="options" id="option1"
-                                        autocomplete="off" checked>
-                                    <label class="btn btn-secondary rounded-start  btn-sm" for="option1">Cartão de
-                                        crédito</label>
-                                    <input type="radio" class="btn-check" name="options" id="option2"
-                                        autocomplete="off">
-                                    <label class="btn btn-secondary  btn-sm" for="option2">Boleto bancário</label>
+                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                    <li class="nav-item " role="presentation">
+                                        <button class="btn btn-secondary active btn-sm rounded-0 rounded-start"
+                                            id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                                            type="button" role="tab" aria-controls="pills-home"
+                                            aria-selected="true">Cartão de Crédito</button>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <button class="btn btn-secondary btn-sm rounded-0 rounded-end"
+                                            id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                                            type="button" role="tab" aria-controls="pills-profile"
+                                            aria-selected="false">Boleto bancário</button>
+                                    </li>
+                                </ul>
+                            </div>
+
+                            <div class="row tab-content" id="pills-tabContent">
+                                <div class="col-12 tab-pane fade show active" id="pills-home" role="tabpanel"
+                                    aria-labelledby="pills-home-tab">
+
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <label for="cardName" class="form-label">Nome no cartão</label>
+                                            <input type="text" placeholder="Nome impresso no cartão" class="form-control"
+                                                id="cardName">
+                                        </div>
+                                        <div class="col-3">
+                                            <label for="expirationMonth" class="form-label">Mês</label>
+                                            <select id="expirationMonth" class="form-select">
+                                                <option selected>Expira mês...</option>
+                                                <option>01</option>
+                                                <option>02</option>
+                                                <option>03</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-3">
+                                            <label class="form-label" for="expirationYear"> Ano </label>
+                                            <select id="expirationYear" class="form-select">
+                                                <option selected>Expira ano...</option>
+                                                <option>2020</option>
+                                                <option>2021</option>
+                                                <option>2022</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="cardNumber" class="form-label">Nome no cartão</label>
+                                            <input type="text" placeholder="5555 5555 5555 555" class="form-control"
+                                                id="cardNumber">
+                                        </div>
+                                        <div class="col-6">
+                                            <label for="cardCode" class="form-label">Código de Segurança</label>
+                                            <input type="text" placeholder="XXX" class="form-control" id="cardCode">
+                                        </div>
+                                    </div>
+
+                                    
+
+                                </div>
+                                <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                    aria-labelledby="pills-profile-tab ">
+                                    <span class="fs-4">Clique em contrar plano que enviaremos um boleto para o seu e-mail.</span>
                                 </div>
                             </div>
 
-                            
 
 
-
-
-                            <div class="col-6">
-                                <label for="cardName" class="form-label">Nome no cartão</label>
-                                <input type="text" placeholder="Nome impresso no cartão" class="form-control"
-                                    id="cardName">
-                            </div>
-                            <div class="col-3">
-                                <label for="expirationMonth" class="form-label">Mês</label>
-                                <select id="expirationMonth" class="form-select">
-                                    <option selected>Expira mês...</option>
-                                    <option>01</option>
-                                    <option>02</option>
-                                    <option>03</option>
-                                </select>
-                            </div>
-                            <div class="col-3">
-                                <label class="form-label" for="expirationYear"> Ano </label>
-                                <select id="expirationYear" class="form-select">
-                                    <option selected>Expira ano...</option>
-                                    <option>2020</option>
-                                    <option>2021</option>
-                                    <option>2022</option>
-                                </select>
-                            </div>
-                            <div class="col-6">
-                                <label for="cardNumber" class="form-label">Nome no cartão</label>
-                                <input type="text" placeholder="5555 5555 5555 555" class="form-control"
-                                    id="cardNumber">
-                            </div>
-                            <div class="col-6">
-                                <label for="cardCode" class="form-label">Código de Segurança</label>
-                                <input type="text" placeholder="XXX" class="form-control" id="cardCode">
-                            </div>
                         </div>
 
                     </div>
@@ -205,12 +223,12 @@
                         </label>
                     </div>
                     <div class="col-12 p-0">
-                        <input type="submit" class="btn btn-primary" value="Contratar Plano"/>
+                        <input type="submit" class="btn btn-primary" value="Contratar Plano" />
                     </div>
                 </form>
             </div>
 
-            <div class="col-lg ms-4">
+            <div class="col-lg-5 ">
                 <h4 class="text-uppercase text-primary h6"> Plano escolhido </h4>
                 <div class="bg-light shadow-sm rounded p-4">
                     <h3>Platinum <span class="badge bg-success">Novo!</span> </h3>
